@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Connect to EC2 instance
+      - name: start container on EC2 instance
         uses: appleboy/ssh-action@v0.1.10
         with:
           host: ${{ secrets.EC2_INSTANCE_HOSTNAME }}
