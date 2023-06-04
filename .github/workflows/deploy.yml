@@ -11,13 +11,13 @@ jobs:
 
     steps:
       - name: start container on EC2 instance
-        uses: appleboy/ssh-action@v0.1.10
-        with:
-          host: ${{ secrets.EC2_INSTANCE_HOSTNAME }}
-          username: ec2-user
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-              # Commands to execute on the EC2 instance
-              docker stop $(docker ps -q)
-              cd /docker-content
-              docker-compose up -d
+        env:
+          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          HOSTNAME: ${{ secrets.EC2_INSTANCE_IP }}
+          USER_NAME: ec2-user
+          run: |
+           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME}
+           docker stop $(docker ps -q)
+           cd /docker-content
+           docker-compose up -d
