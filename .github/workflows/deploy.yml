@@ -1,0 +1,25 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+env:
+   PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+   HOSTNAME: ${{ secrets.EC2_INSTANCE_IP }}
+   USER_NAME: ec2-user
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: start container on EC2 instance
+        run: |
+           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME}
+           docker-compose down && docker-compose up -d
+           
+        
+      
+        
+          
