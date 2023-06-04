@@ -16,11 +16,8 @@ jobs:
           host: ${{ secrets.EC2_INSTANCE_HOSTNAME }}
           username: ec2-user
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Stop all running containers
-        run: |
-          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.EC2_INSTANCE_HOSTNAME }} 'docker stop $(docker ps -q)'
-
-      - name: Change directory and run docker-compose
-        run: |
-          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.EC2_INSTANCE_HOSTNAME }} 'cd docker_content/ && docker-compose up -d'
+          script: |
+              # Commands to execute on the EC2 instance
+              docker stop $(docker ps -q)
+              cd /docker-content
+              docker-compose up -d
