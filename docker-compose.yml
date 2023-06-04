@@ -1,4 +1,5 @@
 version: '3'
 services:
   telebot: 
-    image: dockerbot:latest
+    image: dylanchang/dxtracter
+    restart: always
