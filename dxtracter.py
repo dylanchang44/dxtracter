@@ -1,4 +1,4 @@
-import logging, requests, configparser, datetime, yaml
+import logging, requests, datetime, yaml
 from telegram import Update
 from telegram.ext import filters, ApplicationBuilder, CommandHandler, MessageHandler
 from rating import Drater
