@@ -1,5 +1,5 @@
 version: '3'
 services:
   telebot: 
-    image: dylanchang/dxtracter
+    image: dylanchang/dxtracter:latest
     restart: always
