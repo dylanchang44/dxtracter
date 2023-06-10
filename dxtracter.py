@@ -7,13 +7,14 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-config = configparser.ConfigParser()    # Define the method to read the configuration file
-config.read('config.ini')               # read config.ini file
+# Load the keys from the YAML file
+with open('keys.yml') as file:
+    keys = yaml.safe_load(file)
 
-#Your telegram bot token
-BOT_TOKEN = config.get('default','BOT_TOKEN')
-#Your ALPHA VANTAGE api key 
-stock_api_key = config.get('default','STOCK_API')
+# Your telegram bot token
+BOT_TOKEN = keys['BOT_TOKEN']
+# Your ALPHA VANTAGE api key
+stock_api_key = keys['STOCK_API']
 #Default stock symbol
 stock_symbol = 'TSLA'
 
