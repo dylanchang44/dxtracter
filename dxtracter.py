@@ -137,7 +137,10 @@ def main():
     loop = asyncio.get_event_loop()
     loop.create_task(update_counters())
     #run bot
-    application.run_polling()
+    try:
+        loop.run_until_complete(application.run_polling())
+    finally:
+        loop.close()
     
 
 if __name__ == '__main__':
