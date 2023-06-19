@@ -45,7 +45,6 @@ async def stock_option(update, context):
 
 async def get_news(update, context):
     news_url = f'https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={stock_symbol}&apikey={stock_api_key}'
-    message = ""
     global left_request_d,left_request_m
     left_request_d-=1 
     left_request_m-=1
@@ -56,6 +55,8 @@ async def get_news(update, context):
         await context.bot.send_message(chat_id=update.effective_chat.id, text=f"Fetching 2 latest news for the company => {stock_symbol}")
         news_list = data['feed'][:2]  # Get the first two news articles
         for news in news_list:
+            message = ""
+            
             title = news['title']
             published_time = news['time_published']
             summary = news['summary']
