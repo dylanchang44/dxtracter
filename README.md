@@ -4,13 +4,9 @@
 </p>
 <h4 align="center">A telegram bot to provide infos of the stock, with following features</h4>
 
-<p align="center">
-```sh
 - dockerize
 - github action
 - AWS ec2 hosting
-```
-</p>
 
 ## Workflow
 
