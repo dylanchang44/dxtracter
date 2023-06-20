@@ -1,7 +1,6 @@
 # dxtracter
 <p align="center">
-![dxtracter](https://github.com/dylanchang44/dxtracter/assets/52403864/84f43aab-2c74-48cf-93cd-6a5a7f23e9d4)
-
+   <img width="200" height="380" src="[https://picsum.photos/460/300](https://github.com/dylanchang44/dxtracter/assets/52403864/84f43aab-2c74-48cf-93cd-6a5a7f23e9d4)">
 </p>
 <h4 align="center">A telegram bot to provide infos of the stock, with below features</h4>
 
