@@ -3,11 +3,13 @@
    <img width="240" height="380" src="https://github.com/dylanchang44/dxtracter/assets/52403864/6ab7b12a-5402-4d69-8d85-d8100cc3970c">
 </p>
 <h4 align="center">A telegram bot to provide infos of the stock, with following features</h4>
+
 <p align="center">
 - dockerize
 - github action
 - AWS ec2 hosting
 </p>
+
 ## Workflow
 
 - Image CI
