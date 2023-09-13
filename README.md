@@ -29,4 +29,7 @@ https://github.com/dylanchang44/dxtracter/assets/52403864/6ecba497-c1fa-402b-af6
 https://github.com/dylanchang44/dxtracter/assets/52403864/a0770698-0b3d-4026-b97b-e0a4cbaff87b
 
 
+The bot is terminated at this time.
+
+
 
