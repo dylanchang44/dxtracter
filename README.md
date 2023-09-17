@@ -1,7 +1,6 @@
 # dxtracter
 <p align="center">
-   ![Alt dxtracter](https://imgur.com/QmjkWQe)
-
+   ![dxtracter](https://github.com/dylanchang44/dxtracter/assets/52403864/20287a25-d544-47a0-9c36-cac3d9770748)
 </p>
 <h4 align="center">A telegram bot to provide infos of the stock, with following features</h4>
 
