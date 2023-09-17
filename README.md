@@ -1,5 +1,7 @@
 # dxtracter
-   ![logo](dxtracter.PNG)
+<p align="center">
+  <img src="dxtracter.PNG" alt="logo">
+</p>   
 <h4 align="center">A telegram bot to provide infos of the stock, with following features</h4>
 
 - dockerize
