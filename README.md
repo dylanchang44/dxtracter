@@ -1,6 +1,6 @@
 # dxtracter
 <p align="center">
-   ![dxtracter](https://imgur.com/QmjkWQe)
+   ![Alt dxtracter](https://imgur.com/QmjkWQe)
 
 </p>
 <h4 align="center">A telegram bot to provide infos of the stock, with following features</h4>
