@@ -1,6 +1,7 @@
 # dxtracter
 <p align="center">
-   <img width="240" height="380" src="[https://github.com/dylanchang44/dxtracter/assets/52403864/6ab7b12a-5402-4d69-8d85-d8100cc3970c](https://imgur.com/QmjkWQe)">
+   ![dxtracter](https://github.com/dylanchang44/dxtracter/assets/52403864/ad4cef26-6242-4700-977b-1dd99b46cc4a)
+
 </p>
 <h4 align="center">A telegram bot to provide infos of the stock, with following features</h4>
 
@@ -19,14 +20,22 @@ Push the update => Build program as a docker image => Push the image to dockerhu
 ### Deployment on push
 
 
-[https://github.com/dylanchang44/dxtracter/assets/52403864/6ecba497-c1fa-402b-af6a-cdf464929006](https://imgur.com/0JpR6wB)
+
+
+https://github.com/dylanchang44/dxtracter/assets/52403864/ee811ed5-fd81-4007-b449-3593307c28dc
+
+
 
 
 
 ### DEMO
 
 
-[https://github.com/dylanchang44/dxtracter/assets/52403864/a0770698-0b3d-4026-b97b-e0a4cbaff87b](https://imgur.com/wvkFwIL)
+
+
+
+https://github.com/dylanchang44/dxtracter/assets/52403864/9d411fd7-026a-4c40-8d2c-8744828e01e8
+
 
 
 The bot is terminated at this time.
