@@ -37,7 +37,7 @@ https://github.com/dylanchang44/dxtracter/assets/52403864/9d411fd7-026a-4c40-8d2
 
 
 
-The bot is terminated at this time.
+The bot is currently terminated.
 
 
 
